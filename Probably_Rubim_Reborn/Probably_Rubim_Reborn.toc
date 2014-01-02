@@ -1,0 +1,27 @@
+## Interface: 50400
+## Title: Probably - Reborn (|c00FF0000Rubim|r)
+## Notes: HuE
+## Dependencies: Probably
+
+#Spelllist
+libs\spelllist.lua
+
+#Frame
+libs\pqi.lua
+libs\frame.lua
+
+#Rotacao
+rotations\blood.lua
+rotations\frost2h.lua
+rotations\frostdw.lua
+
+rotations\brewmaster.lua
+rotations\windwalker.lua
+
+rotations\protection.lua
+
+#HB
+rotations\bloodhb.lua
+
+#Funcao
+libs\rubim.lua
