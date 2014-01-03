@@ -93,9 +93,6 @@ local config = {
 	},
 	hotkeys = {
 		{	name = "Death n Decay",		enable = true,	hotkeys = {	'ra' },	},
-		{	name = "Necrotic Strike",	enable = true,	hotkeys = {	'ls' },	},
-		{	name = "Chains",			enable = true,	hotkeys = {	'lc' },	},
-		{	name = "Dispel",			enable = true,	hotkeys = {	'la' },	},
 		{	name = "Pause 1",			enable = true,	hotkeys = {	'rc' },	},
 	},
 }

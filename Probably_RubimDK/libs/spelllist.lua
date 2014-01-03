@@ -96,6 +96,7 @@ Huddle = 47484
 Leap = 47482
 
 --SPECIAL
+NecroticStrike = 73975
 
 --BUFFS
 CrimsonScourge = 81141

@@ -1,5 +1,5 @@
 ## Interface: 50400
-## Title: Probably - Reborn (|c00FF0000Rubim|r)
+## Title: Probably - DK(|c00FF0000Rubim|r)
 ## Notes: HuE
 ## Dependencies: Probably
 
@@ -14,11 +14,6 @@ libs\frame.lua
 rotations\blood.lua
 rotations\frost2h.lua
 rotations\frostdw.lua
-
-rotations\brewmaster.lua
-rotations\windwalker.lua
-
-rotations\protection.lua
 
 #Funcao
 libs\rubim.lua
