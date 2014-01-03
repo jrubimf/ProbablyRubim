@@ -53,10 +53,7 @@ end
 rotype:SetScript("OnEvent", event)
 rotype:RegisterEvent("PLAYER_LOGIN")
 
-if RUBIM_GENERALDK
-and RUBIM_BLOOD
-and RUBIM_UNHOLY
-and RUBIM_FROST then return false end
+if RUBIM_GENERALDK then return false end
 
 local config = {
 	name	= 'General Death Knight',
@@ -84,50 +81,7 @@ local config = {
 				step = 5,
 				tooltip = "You need the Death Pact talent for this",
 			},
-		},				
-	},
-	hotkeys = {
-		{	name = "Death n Decay",		enable = true,	hotkeys = {	'la' },	},
-		{	name = "Pause 1",			enable = true,	hotkeys = {	'ls' },	},
-	},
-}
-RUBIM_GENERALDK = PQI:AddRotation(config)
-
--------------------
--- DIESELL FRAME --
--------------------
-
-local config = {
-	name	= 'Blood',
-	author	= 'Rubim',
-	abilities = {
-		{	name = "NOTHING :3",
-			enable = false,
-		},
-		{ 	name = "Numbox bar that does nothing",
-			enable = false,
-			widget = { type = 'numBox',
-				value = 30,
-				step = 5,
-				tooltip = "You need the Death Pact talent for this",
-			},
-		},
-		{	name = "Whatthefuck",
-			enable = false,
-		},
-	},
-	hotkeys = {
-	},
-}
-RUBIM_BLOOD = PQI:AddRotation(config)
-
--------------------
--- DIESELL FRAME --
--------------------
-local config = {
-	name	= 'DPS',
-	author	= 'Rubim',
-	abilities = {
+		},		
 		{ 	name = "Dark Succor", 			newSection = true,
 			enable = true,
 			widget = { type = 'numBox',
@@ -135,9 +89,14 @@ local config = {
 				step = 5,
 				tooltip = "Only works if you have Dark succor Glyphed",
 			},
-		},
+		},		
 	},
 	hotkeys = {
+		{	name = "Death n Decay",		enable = true,	hotkeys = {	'ra' },	},
+		{	name = "Necrotic Strike",	enable = true,	hotkeys = {	'ls' },	},
+		{	name = "Chains",			enable = true,	hotkeys = {	'lc' },	},
+		{	name = "Dispel",			enable = true,	hotkeys = {	'la' },	},
+		{	name = "Pause 1",			enable = true,	hotkeys = {	'rc' },	},
 	},
 }
-RUBIM_DPS = PQI:AddRotation(config)
+RUBIM_GENERALDK = PQI:AddRotation(config)
