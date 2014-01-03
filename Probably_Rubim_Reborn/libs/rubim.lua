@@ -279,8 +279,8 @@ end
 
 ---PQI SPELLS---
 function Rubim.PQIDeathSiphon()
-if PQI_RubimDPS_DeathSiphon_enable ~= true then return false end
-local HealthFrame = tonumber(PQI_RubimDPS_DeathSiphon_value)
+if PQI_RubimGeneral_DeathSiphon_enable ~= true then return false end
+local HealthFrame = tonumber(PQI_RubimGeneral_DeathSiphon_value)
 local PlayerHP = 100 * UnitHealth("player") / UnitHealthMax("player") 
 
 if PlayerHP <= HealthFrame
@@ -292,8 +292,8 @@ end
 end
 
 function Rubim.PQIDarkSuccor()
-if PQI_RubimDPS_DarkSuccor_enable ~= true then return false end
-local HealthFrame = tonumber(PQI_RubimDPS_DarkSuccor_value)
+if PQI_RubimGeneral_DarkSuccor_enable ~= true then return false end
+local HealthFrame = tonumber(PQI_RubimGeneral_DarkSuccor_value)
 local PlayerHP = 100 * UnitHealth("player") / UnitHealthMax("player") 
 if PlayerHP <= HealthFrame
 then
@@ -335,6 +335,19 @@ end
 function Rubim.PQIDnD()
 if not PQI_RubimGeneralDeathKnight_DeathnDecay_enable then return false end
 if not PQI:IsHotkeys( PQI_RubimGeneralDeathKnight_DeathnDecay_key  ) then return false end
+return true
+end
+
+function Rubim.PQINecrotic()
+if not PQI_RubimGeneralDeathKnight_NecroticStrike_enable then return false end
+if not PQI:IsHotkeys( PQI_RubimGeneralDeathKnight_NecroticStrike_key  ) then return false end
+return true
+end
+
+function Rubim.PQIChains()
+if UnitDebuff("mouseover",GetSpellInfo(ChainsofIce)) ~= nil then return false end
+if not PQI_RubimGeneralDeathKnight_Chains_enable then return false end
+if not PQI:IsHotkeys( PQI_RubimGeneralDeathKnight_Chains_key  ) then return false end
 return true
 end
 

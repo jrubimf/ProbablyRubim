@@ -20,8 +20,5 @@ rotations\windwalker.lua
 
 rotations\protection.lua
 
-#HB
-rotations\bloodhb.lua
-
 #Funcao
 libs\rubim.lua
